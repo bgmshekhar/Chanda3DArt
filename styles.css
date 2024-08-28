@@ -23,7 +23,7 @@ ul.top li {
 ul.top li a {
     text-decoration: none;
     color: #ffff0f0;
-    font-size: 16px;
+    font-size:: 16px;
     margin-left: 10px;
     margin-right: 10px;
 }
@@ -31,8 +31,9 @@ ul.top li a {
  
 .landing-page {
     display: flex;
+    flex-wrap: wrap; /* Allows items to wrap on smaller screens */
     width: 100%;
-    height: 100vh;
+    height: 100vh; /* Full viewport height */
 }
 
 .left-side, .right-side {
@@ -47,10 +48,12 @@ ul.top li a {
 
 .left-side {
     background-color: #1a1a1a;
+    height: 100%; /* Ensure full height for left side */
 }
 
 .right-side {
     background-color: #0d3b66;
+    height: 100%; /* Ensure full height for right side */
 }
 
 h1 {
@@ -62,6 +65,27 @@ p {
     font-size: 1.5rem;
     margin-top: 0;
 }
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+    .landing-page {
+        flex-direction:row; /* Stack the sections vertically on mobile */
+    }
+
+    .left-side, .right-side {
+        width: 100%; /* Each section takes up the full width */
+        height: 50vh; /* Each section takes up 50% of the height */
+    }
+
+    h1 {
+        font-size: 2rem; /* Reduce font size on mobile */
+    }
+
+    p {
+        font-size: 1.2rem; /* Adjust paragraph size on mobile */
+    }
+}
+
 
 nav {
     position: fixed;
@@ -127,7 +151,27 @@ nav ul li a {
     animation: gradientShift 1.2s linear infinite;
     text-align: center;
     }
+
+/* Responsive typography for h3 and p1 elements */
+@media (max-width: 768px) {
+    .portfolio-item h3 {
+        font-size: 2.5rem; /* Smaller font size for mobile screens */
+    }
     .portfolio-item p1 {
+        font-size: 1.1rem; /* Adjust the size of p1 on mobile */
+    }
+}
+
+@media (max-width: 480px) {
+    .portfolio-item h3 {
+        font-size: 2rem; /* Even smaller font size for very small screens */
+    }
+    .portfolio-item p1 {
+        font-size: 1rem; /* Adjust further for smaller screens */
+    }
+}
+
+.portfolio-item p1 {
         color: #1a1a1a;
         text-size-adjust: 10px;
     }
@@ -184,7 +228,7 @@ nav ul li a {
 
 .bold2 {
     font-size: 20px;
-    color: ff4d9;
+    color: #ff4d9; /* Added missing # for the color code */
     font-weight: bold;
 }
 
@@ -193,14 +237,12 @@ nav ul li a {
     margin: 0 auto;
     padding: 0 1rem;
 }
- 
 
 #quiz {
     padding: 2rem 0;
     background-color: #ffe5c1;
     text-align: center;
 }
-
 
 .quiz-container {
     max-width: 600px;
@@ -211,22 +253,21 @@ nav ul li a {
 .bols1 {
     font-size: 30px;
     font-weight: bold;
-   
 }
 
 #question {
     font-size: 20px;
-    font-weight: 900 ;
+    font-weight: 900;
     margin-bottom: 10px;
     color: rgb(27, 27, 157);
     text-align: left;
-
 }
 
 #answer {
     font-size: 15px;
     text-align: left;
 }
+
 #contact {
     padding: 2rem 0;
     background-color: #ae9c9c;
@@ -245,4 +286,56 @@ nav ul li a {
     height: 100vh;
     z-index: -1;
     color: #9a9797;
+}
+
+/* Media Queries for Responsive Design */
+
+/* For tablets and larger mobile devices */
+@media (max-width: 768px) {
+    .bold2 {
+        font-size: 18px;
+    }
+
+    .bols1 {
+        font-size: 24px;
+    }
+
+    #question {
+        font-size: 18px;
+    }
+
+    #answer {
+        font-size: 14px;
+    }
+
+    .about-container, .quiz-container, .contact-container {
+        max-width: 90%;
+    }
+}
+
+/* For small mobile devices */
+@media (max-width: 480px) {
+    .bold2 {
+        font-size: 16px;
+    }
+
+    .bols1 {
+        font-size: 20px;
+    }
+
+    #question {
+        font-size: 16px;
+    }
+
+    #answer {
+        font-size: 13px;
+    }
+
+    .about-container, .quiz-container, .contact-container {
+        max-width: 100%;
+    }
+
+    #particles-js {
+        height: 50vh; /* Adjust height for smaller screens */
+    }
 }
