@@ -1,0 +1,248 @@
+body, html {
+    margin: 0px;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+ul.top {
+    padding-left: 0;
+    list-style-type: none;
+}
+
+ul.top li {
+    margin-bottom: 10px; /* Adjust spacing between items */
+}
+
+ul.top li a {
+    text-decoration: none;
+    color: #ffff0f0;
+    font-size: 16px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+ 
+.landing-page {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+
+.left-side, .right-side {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+.left-side {
+    background-color: #1a1a1a;
+}
+
+.right-side {
+    background-color: #0d3b66;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+p {
+    font-size: 1.5rem;
+    margin-top: 0;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 30;
+    padding: 0.5rem;
+}
+
+nav ul li {
+    margin: 40 1rem;
+}
+
+nav ul li a {
+    color: rgb(174, 153, 96);
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+#portfolio {
+    padding: 2rem 0;
+    text-align: center;
+    background-color:  rgb(132, 161, 151);
+}
+
+.portfolio-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 1rem;
+}
+
+.portfolio-item {
+    margin-bottom: 4rem;
+    margin-top: 4rem;
+}
+
+.portfolio-item img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.portfolio-item h3 {
+    margin-top: 70px;
+    margin: bottom 10px;
+    font-size: 4rem;
+    font-style: initial;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    background: linear-gradient(270deg, #2dde15,#e5da13, #c115c7); /* Gradient colors */
+    background-clip: text;
+    -webkit-background-clip: text; /* For WebKit browsers */
+    color: transparent;
+    animation: gradientShift 1.2s linear infinite;
+    text-align: center;
+    }
+    .portfolio-item p1 {
+        color: #1a1a1a;
+        text-size-adjust: 10px;
+    }
+.portfolio-item p {
+    font-size: 1.2rem;
+    color: #282697;
+    font-weight: bold;
+    font-weight: 300;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+#about {
+    padding: 2rem 0;
+    background-color: #955f41;
+    text-align: center;
+}
+ 
+/* Custom For about me */
+.custom-text {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 60px;
+    font-weight: 700;
+    background: linear-gradient(270deg, #92d52e,#ada924, #a42060); /* Gradient colors */
+    background-clip: text;
+    -webkit-background-clip: text; /* For WebKit browsers */
+    color: transparent;
+}
+
+
+/* Basic styling for the paragraph */
+.intro {
+    font-family: 'Arial', sans-serif;
+    font-size: 20px;
+    line-height: 1.6;
+    color: #D9D9D9;
+    margin: 10px;
+    white-space: pre-line; /* Preserves line breaks and spaces */
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.custom-text2 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 100px;
+    font-weight: 700;
+    background: linear-gradient(90deg, #92d52e,#ada924, #a42060); /* Gradient colors */
+    background-clip: text;
+    -webkit-background-clip: text; /* For WebKit browsers */
+    color: transparent;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.bold2 {
+    font-size: 20px;
+    color: ff4d9;
+    font-weight: bold;
+}
+
+.about-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+ 
+
+#quiz {
+    padding: 2rem 0;
+    background-color: #ffe5c1;
+    text-align: center;
+}
+
+
+.quiz-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.bols1 {
+    font-size: 30px;
+    font-weight: bold;
+   
+}
+
+#question {
+    font-size: 20px;
+    font-weight: 900 ;
+    margin-bottom: 10px;
+    color: rgb(27, 27, 157);
+    text-align: left;
+
+}
+
+#answer {
+    font-size: 15px;
+    text-align: left;
+}
+#contact {
+    padding: 2rem 0;
+    background-color: #ae9c9c;
+    text-align: center;
+}
+
+.contact-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+    color: #9a9797;
+}
