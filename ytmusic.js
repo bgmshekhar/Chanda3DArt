@@ -1,19 +1,19 @@
 // Predefined list of favorite YouTube songs
 const favoriteSongs = [
     {
-        title: "Song Title 1",
-        artist: "Artist Name 1",
-        url: "https://www.youtube.com/watch?v=VIDEO_ID_1"
+        title: "Bol Na Halke Halke | Full Song | Jhoom Barabar Jhoom",
+        artist: "Rahat Fateh Ali Khan, Mahalaxmi Iyer",
+        url: "https://youtu.be/jXwg9l9D51A?si=QSwFbg_iwqsR8EtI"
     },
     {
-        title: "Song Title 2",
-        artist: "Artist Name 2",
-        url: "https://www.youtube.com/watch?v=VIDEO_ID_2"
+        title: "Teri Meri Kahaani",
+        artist: "Arijit Singh, Palak Muchhal",
+        url: "https://youtu.be/ZWAGn4yyRMM?si=bqnBNS24UbGeQROq"
     },
     {
-        title: "Song Title 3",
-        artist: "Artist Name 3",
-        url: "https://www.youtube.com/watch?v=VIDEO_ID_3"
+        title: "Sanam Re Tu Mera Sanam Hua Re",
+        artist: "Arijit Singh",
+        url: "https://youtu.be/GTTgKgzkKqI?si=QkBQa2iityZEVqef"
     }
 ];
 
