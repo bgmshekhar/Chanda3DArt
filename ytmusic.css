@@ -1,0 +1,112 @@
+/* General styles for the quiz */
+.quiz-container {
+    margin: 20px 0;
+}
+
+.quiz-container h2 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+/* Favorite Songs Section */
+#favorite-songs {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.songs-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.song-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+}
+
+.thumbnail {
+    width: 120px;
+    height: auto;
+    margin-right: 20px;
+    border-radius: 8px;
+}
+
+.song-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.song-details h3 {
+    margin: 0;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.song-details p {
+    margin: 5px 0;
+    font-size: 0.9em;
+    color: #777;
+}
+
+.song-details a {
+    color: #0073e6;
+    text-decoration: none;
+    font-size: 0.9em;
+}
+
+.song-details a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive styling */
+@media screen and (max-width: 768px) {
+    .song-item {
+        flex-direction: column; /* Stack items vertically */
+        align-items: flex-start;
+    }
+
+    .thumbnail {
+        width: 100%; /* Make the thumbnail full width on small screens */
+        margin: 0 0 10px 0; /* Adjust margin for better spacing */
+        border-radius: 8px;
+    }
+
+    .song-details {
+        width: 100%;
+        align-items: flex-start;
+    }
+
+    .song-details h3 {
+        font-size: 1.1em; /* Slightly reduce font size */
+    }
+
+    .song-details p {
+        font-size: 0.9em;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .songs-container {
+        padding: 10px;
+    }
+
+    .song-details h3 {
+        font-size: 1em;
+    }
+
+    .song-details p {
+        font-size: 0.85em;
+    }
+
+    .song-details a {
+        font-size: 0.85em;
+    }
+}
