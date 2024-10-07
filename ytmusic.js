@@ -1,9 +1,9 @@
 // Predefined list of favorite YouTube songs
 const favoriteSongs = [
     {
-        title: "Bol Na Halke Halke | Full Song | Jhoom Barabar Jhoom",
-        artist: "Rahat Fateh Ali Khan, Mahalaxmi Iyer",
-        url: "https://youtu.be/jXwg9l9D51A?si=QSwFbg_iwqsR8EtI"
+        title: "Song Title 1",
+        artist: "Artist Name 1",
+        url: "https://www.youtube.com/watch?v=VIDEO_ID_1"
     },
     {
         title: "Song Title 2",
@@ -35,7 +35,9 @@ function generateSongList() {
             // Create song item HTML
             const songItem = `
                 <div class="song-item">
-                    <img src="${thumbnailUrl}" class="thumbnail" alt="Song Thumbnail">
+                    <a href="${song.url}" target="_blank">
+                        <img src="${thumbnailUrl}" class="thumbnail" alt="Song Thumbnail">
+                    </a>
                     <div class="song-details">
                         <h3>${song.title}</h3>
                         <p>${song.artist}</p>
